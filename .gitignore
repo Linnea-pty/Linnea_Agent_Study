@@ -1,0 +1,7 @@
+/.env
+/.venv/
+/histories/
+# 新增的常规忽略项
+__pycache__/
+*.py[cod]
+.idea/
