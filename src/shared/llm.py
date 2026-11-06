@@ -6,15 +6,15 @@ load_dotenv()
 
 def _deepseek() -> ChatOpenAI:
     return ChatOpenAI(
-        model=os.getenv("DEEPSEEK_MODEL", "deepseek-chat"),
+        model=os.getenv("DEEPSEEK_MODEL","deepseek-flash"),
         base_url="https://api.deepseek.com",
-        api_key=os.getenv("DEEP_SEEKER_API_KEY"),
+        api_key=os.getenv("DEEP_SEEK_API_KEY"),
         temperature=0,
     )
 
 def _qwen() -> ChatOpenAI:
     return ChatOpenAI(
-        model=os.getenv("QWEN_MODEL", "qwen-flash"),
+        model=os.getenv("QWEN_MODEL", "qwen3.8-flash"),
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
         api_key=os.getenv("QWEN_API_KEY"),
         temperature=0,
